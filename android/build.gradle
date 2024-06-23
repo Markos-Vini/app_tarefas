@@ -1,0 +1,32 @@
+buildscript {
+    ext.kotlin_version = '1.9.24'  // Verifique se é a versão mais recente do Kotlin necessária
+    repositories {
+        google()  // Adicione o repositório Maven do Google
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.google.gms:google-services:4.3.10'
+        classpath 'com.android.tools.build:gradle:4.1.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        //classpath 'dev.flutter:flutter-gradle-plugin:2.10.0'  // Verifique se é a versão mais recente do flutter-gradle-plugin
+    }
+}
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

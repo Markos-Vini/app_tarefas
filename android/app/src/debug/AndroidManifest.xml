@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.app_flutter">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    
+    <application
+        android:label="app_flutter">
+        
+        <!-- <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAQUeZ-14daKElOb_iej70KF9y4cpWyaIk" /> -->
+
+        <!-- Other configurations -->
+
+    </application>
+</manifest>
