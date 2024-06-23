@@ -116,11 +116,15 @@ Desenvolvi um pacote para integração simplificada com a API de Geocoding. Para
 
 ## Capturas de Tela
 
-<img src="imagens/talaInicial.jpeg" alt="Tela Inicial" width="300"/>
-<img src="imagens/telaTarefa.jpeg" alt="Tela Tarefa" width="300"/>
-<img src="imagens/telaImagem.jpeg" alt="Tela Imagem" width="300"/>
-<img src="imagens/telaLista.jpeg" alt="Tela Lista" width="300"/>
+<div style="display: flex; gap: 10px;">
+  <img src="imagens/talaInicial.jpeg" alt="Tela Inicial" width="300"/>
+  <img src="imagens/telaTarefa.jpeg" alt="Tela Tarefa" width="300"/>
+</div>
 
+<div style="display: flex; gap: 10px;">
+  <img src="imagens/telaImagem.jpeg" alt="Tela Imagem" width="300"/>
+  <img src="imagens/telaLista.jpeg" alt="Tela Lista" width="300"/>
+</div>
 ## Contribuição
 
 Contribuições são bem-vindas! Para grandes alterações, por favor, abra uma issue para discutir o que você gostaria de mudar.
