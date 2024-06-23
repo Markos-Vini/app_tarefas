@@ -24,8 +24,8 @@ Certifique-se de ter Flutter instalado. Para mais detalhes, consulte https://flu
 Clone o repositório e instale as dependências:
 
 ```sh
-    git clone https://github.com/seu-usuario/task_manager_flutter.git
-    cd task_manager_flutter
+    git clone https://github.com/Markos-Vini/app_flutter.git
+    cd app_flutter.git
     flutter pub get
 ```
 
