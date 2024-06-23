@@ -27,6 +27,7 @@ Clone o repositório e instale as dependências:
     git clone https://github.com/seu-usuario/task_manager_flutter.git
     cd task_manager_flutter
     flutter pub get
+```
 
 ## Como Executar
 
@@ -34,17 +35,21 @@ Clone o repositório e instale as dependências:
 
 1. Abra seu emulador Android/iOS.
 2. Execute o seguinte comando no terminal:
+```sh
     flutter run
+```
 
 ## Dispositivo Físico
 
 1. Conecte seu dispositivo Android/iOS via USB.
 2. Verifique se o dispositivo está visível para o Flutter:
+```sh
     flutter devices
-
+```
 3. Execute o aplicativo no dispositivo:
+```sh
     flutter run -d dispositivo-id
-
+```
 ## Gerenciamento de Estado
 
 Utilizei o Provider para gerenciar o estado do aplicativo de forma eficiente e escalável.
@@ -57,36 +62,42 @@ A navegação entre telas é realizada através do uso de rotas nomeadas, facili
 
 
 Para executar teste unitários:
-
+```sh
     flutter test
+```
 
 Teste para ver se os IDs gerados têm o formato correto.
-
+```sh
     flutter test --name "generated IDs have the correct format"
+```
 
 ![Teste](imagens/generatedId.jpeg)
 
 Testa para verificar se o método generateTaskId gera IDs únicos. 
-
+```sh
     flutter test --name "generateTaskId generates unique IDs"
+```
 
 ![Teste](imagens/generateTaskId.jpeg)
 
 Teste para validação de nome não vazio.
-
+```sh
     flutter test --name "Non-empty name validation"
+```
 
 ![Teste](imagens/nome.jpeg)
 
 Teste para comportamento geral da tela de formulário de tarefas.
-
+```sh
     flutter test --name "TaskFormScreen"
+```
 
 ![Teste](imagens/formulario.jpeg)
 
 Teste de widget do Google Maps para garantir seu correto funcionamento.
-
+```sh
     flutter test --name "Google Maps Widget Test"
+```
 
 ![Teste](imagens/google.jpeg)
 
@@ -100,16 +111,15 @@ Desenvolvi um pacote para integração simplificada com a API de Geocoding. Para
 
 1. Instale o pacote via pubspec.yaml:
     dependencies:
-    oogle_maps_geocoding: ^1.0.0
+    google_maps_geocoding: ^1.0.0
 2. Importe e utilize conforme documentação do pacote..
 
 ## Capturas de Tela
 
 ![Tela Inicial](imagens/telaInicial.jpg)
-![Tela Data](imagens/data.jpg)
-![Tela Hora](imagens/hora.jpg)
-![Tela de Adicionar Tarefa](imagens/tarefa.jpg)
-![Tela de Lista de Tarefas](imagens/lista.jpg)
+![Tela Tarefa](imagens/telaTarefa.jpg)
+![Tela Imagem](imagens/telaImagem.jpg)
+![Tela Lista](imagens/telaLista.jpg)
 
 ## Contribuição
 
