@@ -4,9 +4,11 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:app_flutter/screens/task_form_screen.dart';
 
 void main() {
-  setUpAll(() async {
-    await Firebase.initializeApp(); // Inicialize o Firebase uma vez antes de todos os testes
-  });
+   setUpAll(() async {
+    if (Firebase.apps.isEmpty) {
+      await Firebase.initializeApp();
+    }
+   });
   testWidgets('Date selection widget test', (WidgetTester tester) async {
     await tester.pumpWidget(MaterialApp(
       home: TaskFormScreen(),
