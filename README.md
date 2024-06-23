@@ -116,10 +116,10 @@ Desenvolvi um pacote para integração simplificada com a API de Geocoding. Para
 
 ## Capturas de Tela
 
-![Tela Inicial](imagens/telaInicial.jpg)
-![Tela Tarefa](imagens/telaTarefa.jpg)
-![Tela Imagem](imagens/telaImagem.jpg)
-![Tela Lista](imagens/telaLista.jpg)
+![Tela Inicial](imagens/telaInicial.jpeg)
+![Tela Tarefa](imagens/telaTarefa.jpeg)
+![Tela Imagem](imagens/telaImagem.jpeg)
+![Tela Lista](imagens/telaLista.jpeg)
 
 ## Contribuição
 
